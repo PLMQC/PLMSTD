@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="FrequencyName_____for_the_month_____FORMAT_Month___________FORMAT_Year_">
+          <DataField>FrequencyName_____for_the_month_____FORMAT_Month___________FORMAT_Year_</DataField>
+        </Field>
+        <Field Name="Machine_Name">
+          <DataField>Machine_Name</DataField>
+        </Field>
+        <Field Name="Days_1_">
+          <DataField>Days_1_</DataField>
+        </Field>
+        <Field Name="Days_2_">
+          <DataField>Days_2_</DataField>
+        </Field>
+        <Field Name="Days_3_">
+          <DataField>Days_3_</DataField>
+        </Field>
+        <Field Name="Days_4_">
+          <DataField>Days_4_</DataField>
+        </Field>
+        <Field Name="Days_5_">
+          <DataField>Days_5_</DataField>
+        </Field>
+        <Field Name="Days_8_">
+          <DataField>Days_8_</DataField>
+        </Field>
+        <Field Name="Days_7_">
+          <DataField>Days_7_</DataField>
+        </Field>
+        <Field Name="Days_6_">
+          <DataField>Days_6_</DataField>
+        </Field>
+        <Field Name="Days_13_">
+          <DataField>Days_13_</DataField>
+        </Field>
+        <Field Name="Days_16_">
+          <DataField>Days_16_</DataField>
+        </Field>
+        <Field Name="Days_15_">
+          <DataField>Days_15_</DataField>
+        </Field>
+        <Field Name="Days_14_">
+          <DataField>Days_14_</DataField>
+        </Field>
+        <Field Name="Days_12_">
+          <DataField>Days_12_</DataField>
+        </Field>
+        <Field Name="Days_10_">
+          <DataField>Days_10_</DataField>
+        </Field>
+        <Field Name="Days_9_">
+          <DataField>Days_9_</DataField>
+        </Field>
+        <Field Name="Days_29_">
+          <DataField>Days_29_</DataField>
+        </Field>
+        <Field Name="Days_30_">
+          <DataField>Days_30_</DataField>
+        </Field>
+        <Field Name="Days_28_">
+          <DataField>Days_28_</DataField>
+        </Field>
+        <Field Name="Days_27_">
+          <DataField>Days_27_</DataField>
+        </Field>
+        <Field Name="Days_26_">
+          <DataField>Days_26_</DataField>
+        </Field>
+        <Field Name="Days_25_">
+          <DataField>Days_25_</DataField>
+        </Field>
+        <Field Name="Days_24_">
+          <DataField>Days_24_</DataField>
+        </Field>
+        <Field Name="Days_23_">
+          <DataField>Days_23_</DataField>
+        </Field>
+        <Field Name="Days_22_">
+          <DataField>Days_22_</DataField>
+        </Field>
+        <Field Name="Days_21_">
+          <DataField>Days_21_</DataField>
+        </Field>
+        <Field Name="Days_20_">
+          <DataField>Days_20_</DataField>
+        </Field>
+        <Field Name="Days_19_">
+          <DataField>Days_19_</DataField>
+        </Field>
+        <Field Name="Days_18_">
+          <DataField>Days_18_</DataField>
+        </Field>
+        <Field Name="Days_17_">
+          <DataField>Days_17_</DataField>
+        </Field>
+        <Field Name="Days_31_">
+          <DataField>Days_31_</DataField>
+        </Field>
+        <Field Name="Days_11_">
+          <DataField>Days_11_</DataField>
+        </Field>
+        <Field Name="Preventive_Maintainance_ScheduleCaption">
+          <DataField>Preventive_Maintainance_ScheduleCaption</DataField>
+        </Field>
+        <Field Name="Machine_NameCaption">
+          <DataField>Machine_NameCaption</DataField>
+        </Field>
+        <Field Name="V1Caption">
+          <DataField>V1Caption</DataField>
+        </Field>
+        <Field Name="V2Caption">
+          <DataField>V2Caption</DataField>
+        </Field>
+        <Field Name="V3Caption">
+          <DataField>V3Caption</DataField>
+        </Field>
+        <Field Name="V4Caption">
+          <DataField>V4Caption</DataField>
+        </Field>
+        <Field Name="V5Caption">
+          <DataField>V5Caption</DataField>
+        </Field>
+        <Field Name="V6Caption">
+          <DataField>V6Caption</DataField>
+        </Field>
+        <Field Name="V7Caption">
+          <DataField>V7Caption</DataField>
+        </Field>
+        <Field Name="V8Caption">
+          <DataField>V8Caption</DataField>
+        </Field>
+        <Field Name="V9Caption">
+          <DataField>V9Caption</DataField>
+        </Field>
+        <Field Name="V10Caption">
+          <DataField>V10Caption</DataField>
+        </Field>
+        <Field Name="V30Caption">
+          <DataField>V30Caption</DataField>
+        </Field>
+        <Field Name="V29Caption">
+          <DataField>V29Caption</DataField>
+        </Field>
+        <Field Name="V28Caption">
+          <DataField>V28Caption</DataField>
+        </Field>
+        <Field Name="V27Caption">
+          <DataField>V27Caption</DataField>
+        </Field>
+        <Field Name="V26Caption">
+          <DataField>V26Caption</DataField>
+        </Field>
+        <Field Name="V25Caption">
+          <DataField>V25Caption</DataField>
+        </Field>
+        <Field Name="V24Caption">
+          <DataField>V24Caption</DataField>
+        </Field>
+        <Field Name="V23Caption">
+          <DataField>V23Caption</DataField>
+        </Field>
+        <Field Name="V22Caption">
+          <DataField>V22Caption</DataField>
+        </Field>
+        <Field Name="V21Caption">
+          <DataField>V21Caption</DataField>
+        </Field>
+        <Field Name="V20Caption">
+          <DataField>V20Caption</DataField>
+        </Field>
+        <Field Name="V19Caption">
+          <DataField>V19Caption</DataField>
+        </Field>
+        <Field Name="V18Caption">
+          <DataField>V18Caption</DataField>
+        </Field>
+        <Field Name="V17Caption">
+          <DataField>V17Caption</DataField>
+        </Field>
+        <Field Name="V16Caption">
+          <DataField>V16Caption</DataField>
+        </Field>
+        <Field Name="V15Caption">
+          <DataField>V15Caption</DataField>
+        </Field>
+        <Field Name="V14Caption">
+          <DataField>V14Caption</DataField>
+        </Field>
+        <Field Name="V13Caption">
+          <DataField>V13Caption</DataField>
+        </Field>
+        <Field Name="V12Caption">
+          <DataField>V12Caption</DataField>
+        </Field>
+        <Field Name="V11Caption">
+          <DataField>V11Caption</DataField>
+        </Field>
+        <Field Name="V31Caption">
+          <DataField>V31Caption</DataField>
+        </Field>
+        <Field Name="Equipment_No_">
+          <DataField>Equipment_No_</DataField>
+        </Field>
+        <Field Name="IsMonthDays28">
+          <DataField>IsMonthDays28</DataField>
+        </Field>
+        <Field Name="IsMonthDays31">
+          <DataField>IsMonthDays31</DataField>
+        </Field>
+        <Field Name="IsMonthdays30">
+          <DataField>IsMonthdays30</DataField>
+        </Field>
+        <Field Name="IsLeapyear">
+          <DataField>IsLeapyear</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

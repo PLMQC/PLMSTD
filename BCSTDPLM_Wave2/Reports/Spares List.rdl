@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="TODAY">
+          <DataField>TODAY</DataField>
+        </Field>
+        <Field Name="StartDate">
+          <DataField>StartDate</DataField>
+        </Field>
+        <Field Name="Spares_ListCaption">
+          <DataField>Spares_ListCaption</DataField>
+        </Field>
+        <Field Name="Date_Caption">
+          <DataField>Date_Caption</DataField>
+        </Field>
+        <Field Name="Page_NoCaption">
+          <DataField>Page_NoCaption</DataField>
+        </Field>
+        <Field Name="QUANTITYCaption">
+          <DataField>QUANTITYCaption</DataField>
+        </Field>
+        <Field Name="CodeCaption">
+          <DataField>CodeCaption</DataField>
+        </Field>
+        <Field Name="DESCRIPTIONCaption">
+          <DataField>DESCRIPTIONCaption</DataField>
+        </Field>
+        <Field Name="UNIT_COSTCaption">
+          <DataField>UNIT_COSTCaption</DataField>
+        </Field>
+        <Field Name="AMOUNTCaption">
+          <DataField>AMOUNTCaption</DataField>
+        </Field>
+        <Field Name="SPIN_No_Caption">
+          <DataField>SPIN_No_Caption</DataField>
+        </Field>
+        <Field Name="Frequency_NameCaption">
+          <DataField>Frequency_NameCaption</DataField>
+        </Field>
+        <Field Name="DUE_DATECaption">
+          <DataField>DUE_DATECaption</DataField>
+        </Field>
+        <Field Name="Maintenance_schedule_Part_No_">
+          <DataField>Maintenance_schedule_Part_No_</DataField>
+        </Field>
+        <Field Name="Maintenance_schedule_Part_Machine_ID">
+          <DataField>Maintenance_schedule_Part_Machine_ID</DataField>
+        </Field>
+        <Field Name="Maintenance_schedule_Part_Frequency_Name">
+          <DataField>Maintenance_schedule_Part_Frequency_Name</DataField>
+        </Field>
+        <Field Name="Maintenance_schedule_Part_Line_No_">
+          <DataField>Maintenance_schedule_Part_Line_No_</DataField>
+        </Field>
+        <Field Name="NextDueDate_MaintenanceschedulePart">
+          <DataField>NextDueDate_MaintenanceschedulePart</DataField>
+        </Field>
+        <Field Name="Maintenance_schedule_Part___Machine_ID_">
+          <DataField>Maintenance_schedule_Part___Machine_ID_</DataField>
+        </Field>
+        <Field Name="Maintenance_schedule_Part___Frequency_Name_">
+          <DataField>Maintenance_schedule_Part___Frequency_Name_</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line__I_R_Code_">
+          <DataField>Equipment_Schedule_Line__I_R_Code_</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line_Quantity">
+          <DataField>Equipment_Schedule_Line_Quantity</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line_QuantityFormat">
+          <DataField>Equipment_Schedule_Line_QuantityFormat</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line__Unit_Cost_">
+          <DataField>Equipment_Schedule_Line__Unit_Cost_</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line__Unit_Cost_Format">
+          <DataField>Equipment_Schedule_Line__Unit_Cost_Format</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line_Amount">
+          <DataField>Equipment_Schedule_Line_Amount</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line_AmountFormat">
+          <DataField>Equipment_Schedule_Line_AmountFormat</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line__I_R_Description_">
+          <DataField>Equipment_Schedule_Line__I_R_Description_</DataField>
+        </Field>
+        <Field Name="Maintenance_schedule_Part___Next_Due_Date_">
+          <DataField>Maintenance_schedule_Part___Next_Due_Date_</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line__I_R_Code__Control1102152066">
+          <DataField>Equipment_Schedule_Line__I_R_Code__Control1102152066</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line_Quantity_Control1102152067">
+          <DataField>Equipment_Schedule_Line_Quantity_Control1102152067</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line_Quantity_Control1102152067Format">
+          <DataField>Equipment_Schedule_Line_Quantity_Control1102152067Format</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line__Unit_Cost__Control1102152068">
+          <DataField>Equipment_Schedule_Line__Unit_Cost__Control1102152068</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line__Unit_Cost__Control1102152068Format">
+          <DataField>Equipment_Schedule_Line__Unit_Cost__Control1102152068Format</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line_Amount_Control1102152069">
+          <DataField>Equipment_Schedule_Line_Amount_Control1102152069</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line_Amount_Control1102152069Format">
+          <DataField>Equipment_Schedule_Line_Amount_Control1102152069Format</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line__I_R_Description__Control1102152070">
+          <DataField>Equipment_Schedule_Line__I_R_Description__Control1102152070</DataField>
+        </Field>
+        <Field Name="Maintenance_schedule_Part___Next_Due_Date__Control1102152072">
+          <DataField>Maintenance_schedule_Part___Next_Due_Date__Control1102152072</DataField>
+        </Field>
+        <Field Name="Maintenance_schedule_Part___Frequency_Name__Control1102152074">
+          <DataField>Maintenance_schedule_Part___Frequency_Name__Control1102152074</DataField>
+        </Field>
+        <Field Name="Maintenance_schedule_Part___Machine_ID__Control1102152076">
+          <DataField>Maintenance_schedule_Part___Machine_ID__Control1102152076</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line_Schedule_Template_ID">
+          <DataField>Equipment_Schedule_Line_Schedule_Template_ID</DataField>
+        </Field>
+        <Field Name="Equipment_Schedule_Line_Line_No_">
+          <DataField>Equipment_Schedule_Line_Line_No_</DataField>
+        </Field>
+        <Field Name="IRCode_EquipmentScheduleLine">
+          <DataField>IRCode_EquipmentScheduleLine</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

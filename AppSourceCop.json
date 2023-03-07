@@ -1,0 +1,9 @@
+{
+    
+    "name": "B2B Plant Maintenance",
+    "publisher": "B2B Software Technologies Limited",
+    "baselinePackageCachePath": "./.appSourceCopPackages",
+    "mandatoryAffixes": [
+        "B2B"
+    ]
+} 

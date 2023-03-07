@@ -1,0 +1,32 @@
+{
+  "id": "f76d2ec3-ce54-45dd-9b6b-f60fcc29ac2a",
+  "name": "B2B Plant Maintenance",
+  "publisher": "B2B Software Technologies Limited",
+  "version": "1.0.0.4",
+  "brief": "Solution for Plant Maintenance",
+  "description": "Plant Maintenance is a complete solution for the machinery & equipment requirements.It enables organizations to efficiently improve & sustain life of machinery & equipment & thereby increasing productivity.",
+  "privacyStatement": "https://b2bsoftech.com/contactus.html",
+  "EULA": "https://b2bsoftech.com/contactus.html",
+  "help": "https://b2bsoftech.com/plmhelp.html",
+  "url": "https://b2bsoftech.com/contactus.html",
+  "logo": "Logo/Logo.jpg",
+  "dependencies": [ 
+  ],
+  "screenshots": [],
+  "platform": "21.0.0.0",
+  "application": "21.0.0.0",
+  "idRanges": [
+    {
+      "from": 30000000,
+      "to": 33058700
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "features": ["TranslationFile","GenerateCaptions"],
+  "contextSensitiveHelpUrl": "https://b2bsoftech.com/contactus.html",
+  "runtime": "10.0"
+}

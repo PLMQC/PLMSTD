@@ -1,0 +1,17 @@
+{
+    "name": "SD ruleset",
+    "description": "SD PLM Code",
+    "includedRuleSets": [
+        {
+            "action": "Default",
+            "path": "./SDApp.ruleset.json"
+        }
+    ],
+    "rules": [
+        {
+            "id": "AS0054",
+            "action": "None",
+            "justification": "Ignored"
+        }
+    ]
+}
